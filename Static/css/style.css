@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo Body */
+
+body{    
+    background: lightgrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 50px;
+    
+}
+
+/* Estilo Header */
+
+header{
+    grid-area: header;
+    display: flex;
+    background: black;
+    text-decoration-color: white;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    border-bottom: 3px solid #ccc;
+    flex-flow: row wrap;
+    justify-content: space-around;
+   
+}
+
+/* Estilo Nav */
+
+nav{
+    grid-area: nav;
+    display: flex;
+    background: lightblue;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+    border: 2px solid black;
+    background: #ccc;
+    padding: 2px;
+}  
+
+.cajadebusqueda{
+    margin: 10px;
+    line-height: 30px;
+    border: 2px solid black;
+    background: #ccc;
+    padding: 2px;
+}
+
+#grid-layout{
+    display: grid;
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "titulooferta titulooferta aside"
+    "oferta oferta aside"
+    "titulodestacado titulodestacado aside"
+    "destacados destacados aside"
+    "titulocatalogo titulocatalogo aside"
+    "productos productos aside"
+    "footer footer footer";
+    grid-template-columns: 40% 40% 20%;
+
+}
+
+.titulo-ofertas{
+    grid-area: titulooferta;
+}
+
+.ofertas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    grid-area: oferta;
+    grid-template-columns: auto;
+}
+
+.titulo-destacados{
+    grid-area: titulodestacado;
+}
+
+.destacados{
+    display: flex;
+    grid-area: destacados;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+
+.titulo-catalogo{
+    grid-area: titulocatalogo;
+}
+
+.catalogo{
+    display: flex;
+    grid-area: productos;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+
+aside{
+    display: flex;
+    grid-area: aside;
+    background: lightblue; 
+    align-items: flex-start;
+    border: 3px solid #ccc;
+    flex-flow: row wrap;
+    justify-content: space-around;
+        
+}
+
+#lateral{
+    width: 100px;
+    height: 100px;
+    align-items: flex-start;
+}
+
+
+footer{
+    grid-area: footer;
+    background: black;
+    color: white;
+    text-align: center;
+    align-items: flex-end;
+    width: auto;
+    
+}
+
+footer ul li{
+    list-style: none;
+}
+
+h2{
+    background: black;
+    color: white;
+    border-bottom: 3px solid white;
+    text-align: center;
+  
+    
+}
