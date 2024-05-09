@@ -4,12 +4,27 @@
 }
 
 /* Estilo Body */
-
+ 
 body{    
     background: lightgrey;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 50px;
     
+}
+
+#form-wrapper{
+    background-color: bisque;
+}
+#formRegister{
+    margin: 10px;
+    line-height: 30px; 
+    border: 2px solid black; 
+    background: #ccc;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Estilo Header */
