@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAFF</title>
     <link rel="stylesheet" href="Static/css/style.css">
+
+    <!-- FontAwesome -->
+    
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Encabezado -->
@@ -21,28 +25,25 @@
             </div>
 
             <!-- Slogan -->
-            <div><h1 class="Slogan">DAFF, Tu centro de Moda</h1></div>
+            <div class="Slogan"><h1 class="Slogan">DAFF, Tu centro de Moda</h1></div>
                         
             <!-- Menu      -->
-                <div class="dropdown">
-                    <button class="dropdown-menu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-bars"></i>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-inicio" href="#">Inicio</a></li>
-                        <li><a class="dropdown-log-in" href="#">Log-in</a></li>
-                        <li><a class="dropdown-ayuda" href="#">Ayuda</a></li>                        
-                      </div>
-                    </button>
-                </div>    
+            <div id="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a href=""><i class="fa fa-bars fa-2x fa-lg" style="color:#FFFFFF;"></i></a>
+                        <ul>
+                            <li><a href="">Inicio</a></li>
+                            <li><a href="">Registrarse</a></li>
+                            <li><a href="">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>    
+            </div> 
       
     
         <!-- Muestra ítems hombre - mujer - ofertas -->
 
         <!-- Carrito -->
-
-        <div class="Carrito">
-            <button type="button"><img src="Static/Img/Carrito.png" alt="" height="35px" width="35px" ></button>
-        </div>
 
     </header>  
     
@@ -64,6 +65,10 @@
                 <button type="submit"><img src="C:\Users\Fidei\Desktop\CFSP\DAFF\Static\Img\Search.png" alt=""></button>
             </form>
         </div>
+
+        <div class="Carrito" id="Carrito">
+            <button type="button"><img src="Static/Img/Carrito.png" alt="" height="35px" width="35px" ></button>
+        </div>
             
     </nav>
 
@@ -75,7 +80,7 @@
             
          <h2 class="titulo-ofertas">Ofertas</h2>
 
-        <section class="ofertas" id="ofertas">
+        <section class="Secciones" id="ofertas">
             
 
             <!-- oferta1 -->
@@ -126,7 +131,7 @@
         
         <h2 class="titulo-destacados">Productos destacados</h2>
 
-        <section class="destacados" id="destacados">
+        <section class="Secciones" id="destacados">
 
 
             <!-- producto destacado 1 -->
@@ -176,8 +181,7 @@
 
         <h2 class="titulo-catalogo">Catálogo</h2>
 
-        <section class="catalogo" id="catalogo">
-            
+        <section class="Secciones" id="catalogo">        
             
             <div class="productos-destacados" id="destacado3">
                 <a href="">
@@ -214,18 +218,7 @@
 
 
         </section>
-    
-        <aside>
-            <div id="lateral">
-                <h2>Barra Lateral</h2>
-                <form action="">
-                    <input type="text">
-                    <input type="submit" value="buscar">
-                </form>
-            </div>
-        </aside>
-
-               
+              
     </main>
 
     <!-- Footer -->
