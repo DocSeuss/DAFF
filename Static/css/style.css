@@ -1,14 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Estilo Body */
 
 body{    
     background: lightgrey;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 50px;
+    margin: 20px;
     
 }
 
@@ -27,7 +28,90 @@ header{
     border-bottom: 3px solid #ccc;
     flex-flow: row wrap;
     justify-content: space-around;
-   
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-radius: 10px;
+}
+
+h1{
+    word-spacing: 0.2em;
+}
+
+/* Boton desplegable */
+
+.dropdown-menu > li {
+    float:left;
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    background-color: black;
+    border-bottom: 1px solid white;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.dropdown-menu li a:hover {
+    background-color:#434343;
+}
+
+.dropdown-menu li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    list-style: none;
+}
+
+.dropdown-menu li:hover > ul {
+    display:block;
+}
+
+.dropdown-menu li ul li {
+    position:relative;
+}
+
+.dropdown-menu li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+/* caja de busqueda */
+
+.cajadebusqueda{
+    display: flex;
+    margin: 10px;
+    line-height: 30px;
+    border: 2px solid black;
+    background: #ccc;
+    padding: 2px;
+    width: 230px;
+    align-items: center;
+}
+
+::placeholder{
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-busqueda{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.Ir-a-productos{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    padding-top: 5px;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
 /* Estilo Nav */
@@ -35,8 +119,13 @@ header{
 nav{
     grid-area: nav;
     display: flex;
-    background: lightblue;
-    justify-content: space-between;
+    background: #eee;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    align-items: center;
 
 }
 
@@ -46,38 +135,36 @@ nav ul li{
     margin: 10px;
     line-height: 30px;
     border: 2px solid black;
-    background: #ccc;
+    background: black;
     padding: 2px;
+    color: white;
 }  
 
-.cajadebusqueda{
-    margin: 10px;
-    line-height: 30px;
-    border: 2px solid black;
-    background: #ccc;
-    padding: 2px;
-}
+/* Grid-layout */
 
 #grid-layout{
     display: grid;
     grid-template-areas: "header header header"
     "nav nav nav"
-    "titulooferta titulooferta aside"
-    "oferta oferta aside"
-    "titulodestacado titulodestacado aside"
-    "destacados destacados aside"
-    "titulocatalogo titulocatalogo aside"
-    "productos productos aside"
+    "titulooferta titulooferta titulooferta"
+    "oferta oferta oferta"
+    "titulodestacado titulodestacado titulodestacado"
+    "destacados destacados destacados"
+    "titulocatalogo titulocatalogo titulocatalogo"
+    "productos productos productos"
     "footer footer footer";
     grid-template-columns: 40% 40% 20%;
 
 }
 
+/* Secciones */
+
 .titulo-ofertas{
     grid-area: titulooferta;
+    margin-top: 20px;
 }
 
-.ofertas{
+#ofertas{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -90,7 +177,7 @@ nav ul li{
     grid-area: titulodestacado;
 }
 
-.destacados{
+#destacados{
     display: flex;
     grid-area: destacados;
     flex-flow: row wrap;
@@ -103,7 +190,7 @@ nav ul li{
     grid-area: titulocatalogo;
 }
 
-.catalogo{
+#catalogo{
     display: flex;
     grid-area: productos;
     flex-flow: row wrap;
@@ -112,36 +199,10 @@ nav ul li{
     
 }
 
-aside{
-    display: flex;
-    grid-area: aside;
-    background: lightblue; 
-    align-items: flex-start;
-    border: 3px solid #ccc;
-    flex-flow: row wrap;
-    justify-content: space-around;
-        
-}
-
-#lateral{
-    width: 100px;
-    height: 100px;
-    align-items: flex-start;
-}
-
-
-footer{
-    grid-area: footer;
-    background: black;
-    color: white;
-    text-align: center;
-    align-items: flex-end;
-    width: auto;
-    
-}
-
-footer ul li{
-    list-style: none;
+section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 h2{
@@ -149,6 +210,131 @@ h2{
     color: white;
     border-bottom: 3px solid white;
     text-align: center;
-  
+    border-radius: 10px;    
+}
+
+/* Items */
+
+.item{
+    display: flex;
+    border: 2px solid black;
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    padding: 25px;
+    background: darkgray;
+    justify-content: center;
+
+}
+
+/* Imagenes */
+.Imagen{
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+/* Detalle del producto */
+
+.Detail{
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-size: x-large;
     
+}
+
+a{
+    text-decoration: none;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    height: 100px;
+    background: black;
+    color: white;
+    text-align: center;
+    align-items: center; 
+    justify-content: flex-start; 
+    font-size: 20px;
+    width: 100%; 
+    border-radius: 10px;
+}
+
+/* Lista dentro del footer */
+footer ul {
+    list-style: none; 
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px; 
+    display: inline; 
+}
+
+footer ul li a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.Opciones-footer{
+    border: 1px solid white;
+    padding: 5px;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    
+    body {
+        margin: 10px;
+    }
+    header {
+        height: auto;
+    }
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    .Slogan {
+        font-size: 12px;
+        margin: 10px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 5px;
+    }
+    .cajadebusqueda {
+        width: 200px;
+    }
+    .Ir-a-productos {
+        width: auto;
+    }
+    .Carrito button {
+        font-size: 20px;
+    }
+}
+
+/* Media queries para tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .Slogan {
+        font-size: 24px;
+    }
+    .cajadebusqueda {
+        width: 230px;
+    }
+    .Ir-a-productos {
+        width: 200px;
+    }
 }
