@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAFF</title>
     <link rel="stylesheet" href="Static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- FontAwesome -->
     
@@ -14,60 +15,51 @@
     <!-- Encabezado -->
     <header class="header">
         
-            <!-- logo -->
-            <div class="logo">
+        <!-- logo -->
+        <div class="logo">
             
-                <!-- mas adelante se aplicaran estilos especificos al texto y se agregar un icono -->
-                <a href="/">
-                    <i class=""></i>
-                    <span class="logo-text" >DAFF</span>
-                </a>
-            </div>
+            <a href=""><img src="C:\Users\Fidei\Desktop\Proyecto DAFF\DAFF\Static\Img\DAFF1.jpeg" alt="" width="50px" height="50px"></a>             
+                
+        </div>
 
-            <!-- Slogan -->
-            <div class="Slogan"><h1 class="Slogan">DAFF, Tu centro de Moda</h1></div>
+        <!-- Slogan -->
+        <h1 class="Slogan">DAFF, Tu centro de Moda</h1>
                         
-            <!-- Menu      -->
-            <div id="dropdown">
-                <ul class="dropdown-menu">
-                    <li><a href=""><i class="fa fa-bars fa-2x fa-lg" style="color:#FFFFFF;"></i></a>
-                        <ul>
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="">Registrarse</a></li>
-                            <li><a href="">Contacto</a></li>
-                        </ul>
-                    </li>
-                </ul>    
-            </div> 
-      
-    
-        <!-- Muestra ítems hombre - mujer - ofertas -->
-
-        <!-- Carrito -->
-
+        <!-- Menu      -->
+        <div id="dropdown">
+                
+            <ul class="dropdown-menu">
+                <li><i class="fa fa-bars fa-2x fa-lg" style="color:#FFFFFF;"></i>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Registrarse</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>    
+        </div>     
     </header>  
     
     <nav id="barra-nav">
-            
-        <div>
-            <ul id="opciones-nav">
-                <li><a class="nav-ofertas" href="#">Ofertas</a></li>
-                <li><a class="nav-hombre" href="#">Hombre</a></li>
-                <li><a class="nav-mujer" href="#">Mujer</a></li>
-            </ul>
+        
+        <!-- Ir a productos -->
+        <div class="Ir-a-productos">
+            <a href="" class="Ir-a-productos">Ir a Productos</a>
         </div>       
 
         <!-- barra de busqueda -->
 
         <div class="Caja-busqueda">
             <form class="cajadebusqueda">
-                <input type="text" placeholder="Busqueda">
-                <button type="submit"><img src="C:\Users\Fidei\Desktop\CFSP\DAFF\Static\Img\Search.png" alt=""></button>
+                <input type="text" placeholder="Busqueda" class="input-busqueda">
+                <button type="submit"><i class="fas fa-search" style="width: 25px; height: 25px;"></i></button>
             </form>
         </div>
 
+        <!-- Carrito -->
+
         <div class="Carrito" id="Carrito">
-            <button type="button"><img src="Static/Img/Carrito.png" alt="" height="35px" width="35px" ></button>
+            <button type="button"><i class="fas fa-shopping-cart" style="font-size: 35px;"></i></button>
         </div>
             
     </nav>
@@ -85,42 +77,39 @@
 
             <!-- oferta1 -->
 
-            <div class="oferta-item" id="oferta1">
+            <div class="item" id="oferta1">
                 <a href="">
-                    <img src="Static/Img/Sueter Blanco.jpg" alt="">
-                    <div class="oferta-1-detail">
+                    <img src="Static/Img/Sueter Blanco.jpg" alt="" class="Imagen">
+                    <div class="Detail">
                         <p class="oferta-1-detail-tittle">
                             Sueter Blanco
-                        </p>
-                        <p class="oferta-1-descuento">25% de Descuento</p>
+                        </p>                        
                     </div>
                 </a>
             </div>
 
         <!-- oferta 2 -->
 
-            <div class="oferta-item" id="oferta2">
+            <div class="item" id="oferta2">
                 <a href="">
-                    <img src="Static/Img/Sueter negro.jpg" alt="">
-                    <div class="oferta-2-detail">
+                    <img src="Static/Img/Sueter negro.jpg" alt="" class="Imagen">
+                    <div class="Detail">
                         <p class="oferta-2-detail-tittle">
                         Sueter Negro
-                        </p>
-                        <p class="oferta-2-descuento">20% de Descuento</p>
+                        </p>                        
                     </div>
                 </a>
             </div>
 
         <!-- oferta 3 -->
 
-            <div class="oferta-item" id="oferta3">
+            <div class="item" id="oferta3">
                 <a href="">
-                    <img src="Static/Img/Sueter verde.jpg" alt="">
-                    <div class="oferta-3-detail">
+                    <img src="Static/Img/Sueter verde.jpg" alt="" class="Imagen">
+                    <div class="Detail">
                         <p class="oferta-3-detail-tittle">
                         Sueter Verde
-                        </p>
-                        <p class="oferta-2-descuento">30% de Descuento</p>
+                        </p>                       
                     </div>
                 </a>
             </div>
@@ -136,10 +125,10 @@
 
             <!-- producto destacado 1 -->
 
-            <div class="productos-destacados" id="destacado1">
+            <div class="item" id="destacado1">
                 <a href="">
-                    <img src="Static/Img/Campera negra.jpg" alt="">
-                    <div class="destacado1-detail">
+                    <img src="Static/Img/Campera negra.jpg" alt="" class="Imagen">
+                    <div class="Detail">
                         <p class="destacado1-detail">
                             Campera Negra
                         </p>
@@ -149,10 +138,10 @@
 
             <!-- producto destacado 2 -->
 
-            <div class="productos-destacados" id="destacado2">
+            <div class="item" id="destacado2">
                 <a href="">
-                    <img src="Static/Img/Hoodies unisex marron claro.jpg" alt="">
-                    <div class="destacado1-detail">
+                    <img src="Static/Img/Hoodies unisex marron claro.jpg" alt="" class="Imagen">
+                    <div class="Detail">
                         <p class="destacado1-detail">
                             Hoodies Unisex
                         </p>
@@ -162,10 +151,10 @@
 
             <!-- Producto destacado 3 -->
 
-            <div class="productos-destacados" id="destacado3">
+            <div class="item" id="destacado3">
                 <a href="">
-                    <img src="Static/Img/Sobretodo hombre polar marron.jpg" alt="">
-                    <div class="destacado1-detail">
+                    <img src="Static/Img/Sobretodo hombre polar marron.jpg" alt="" class="Imagen">
+                    <div class="Detail">
                         <p class="destacado1-detail">
                             Hoodies Unisex
                         </p>
@@ -183,10 +172,10 @@
 
         <section class="Secciones" id="catalogo">        
             
-            <div class="productos-destacados" id="destacado3">
+            <div class="item" id="destacado3">
                 <a href="">
-                    <img src="Static/Img/Sobretodo hombre polar marron.jpg" alt="">
-                    <div class="destacado1-detail">
+                    <img src="Static/Img/Sobretodo hombre polar marron.jpg" alt="" class="Imagen">
+                    <div class="Detail">
                         <p class="destacado1-detail">
                             Hoodies Unisex
                         </p>
@@ -194,10 +183,10 @@
                 </a>
             </div>
             
-            <div class="productos-destacados" id="destacado3">
+            <div class="item" id="destacado3">
                 <a href="">
-                    <img src="Static/Img/Sobretodo hombre polar marron.jpg" alt="">
-                    <div class="destacado1-detail">
+                    <img src="Static/Img/Sobretodo hombre polar marron.jpg" alt="" class="Imagen">
+                    <div class="Detail">
                         <p class="destacado1-detail">
                             Hoodies Unisex
                         </p>
@@ -205,10 +194,10 @@
                 </a>
             </div>
 
-            <div class="productos-destacados" id="destacado3">
+            <div class="item" id="destacado3">
                 <a href="">
-                    <img src="Static/Img/Sobretodo hombre polar marron.jpg" alt="">
-                    <div class="destacado1-detail">
+                    <img src="Static/Img/Sobretodo hombre polar marron.jpg" alt="" class="Imagen">
+                    <div class="Detail">
                         <p class="destacado1-detail">
                             Hoodies Unisex
                         </p>
@@ -225,9 +214,9 @@
 
     <footer id="footer">
         <ul>
-            <li><a href="">Términos y condiciones</a></li>
-            <li><a href="">Preguntas frecuentes</a></li>
-            <li><a href="">Ayuda</a></li>
+            <li class="Opciones-footer"><a href="">Términos y condiciones</a></li>
+            <li class="Opciones-footer"><a href="">Preguntas frecuentes</a></li>
+            <li class="Opciones-footer"><a href="">Ayuda</a></li>
         </ul>
    </footer>
 
