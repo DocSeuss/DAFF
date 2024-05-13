@@ -12,6 +12,8 @@ body{
     
 }
 
+/* estilo registraion */
+
 #form-wrapper{
     background-color: bisque;
 }
@@ -26,6 +28,21 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+
+#form-wrapper{
+    background-color: bisque;
+}
+
+#error-password{
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    size: 3px;
+}
+
+/* fin estilo registracion */
 
 /* Estilo Header */
 

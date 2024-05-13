@@ -55,7 +55,7 @@ btnSend.addEventListener('click',function(){
     }
 
     if(!passwordRegex.test(password.value)){
-        document.querySelector("#error-password").innerHTML ="Minimo 8 caracteres\nMaximo 15\nAl menos una letra mayúscula\nAl menos una letra minucula\nAl menos un dígito\nNo espacios en blanco\nAl menos 1 caracter especial";
+        document.querySelector("#error-password").innerHTML ="Mínimo 8 caracteres máximo 15<br>Al menos una letra mayúscula<br>Al menos una letra minucula<br>Al menos un dígito<br>No espacios en blanco<br>Al menos 1 caracter especial";
         error=true;
     } 
 
