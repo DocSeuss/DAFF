@@ -215,7 +215,7 @@ h2{
 
 /* Items */
 
-.item{
+.item {
     display: flex;
     border: 2px solid black;
     width: 350px;
@@ -227,13 +227,22 @@ h2{
 
 }
 
+
 /* Imagenes */
 .Imagen{
     border: 2px solid black;
     width: 250px;
     height: 250px;
+    transition: all 0.5s;
 }
+.Imagen:hover {
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    translate: 0px -50px;
+    transition: all 0.5s;
 
+}
 /* Detalle del producto */
 
 .Detail{
