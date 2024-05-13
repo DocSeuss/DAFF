@@ -296,6 +296,36 @@ footer ul li a {
     padding: 5px;
 }
 
+/* estilo registracion */
+#form-wrapper{
+    background-color: bisque;
+}
+#formRegister{
+    margin: 10px;
+    line-height: 30px; 
+    border: 2px solid black; 
+    background: #ccc;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#form-wrapper{
+    background-color: bisque;
+}
+
+#error-password{
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    size: 3px;
+}
+/* fin estilo registracion */
+
 /* Media queries para dispositivos móviles */
 @media only screen and (max-width: 600px) {
     
