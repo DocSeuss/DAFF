@@ -11,6 +11,10 @@
     
 }
 
+a{
+    text-decoration: none;
+}
+
 header{
 display: flex;
 justify-content: center;
@@ -19,6 +23,19 @@ height: 100px;
 background-color: lightslategrey;
 align-items: center;
 padding: 10px;
+}
+
+h1{
+    color:black;
+}
+    
+
+
+.nav-link{
+    display:flexbox;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
 }
 
 #imagen-header{
@@ -55,7 +72,7 @@ padding: 10px;
     font-weight: 700;
 }
 .container-form a i{
-    color: blueviolet;
+    color: darkgray;
     margin-right: 10px;
 }
 .container-form form .campo, textarea{
