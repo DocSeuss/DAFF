@@ -236,8 +236,8 @@ h2{
     transition: all 0.5s;
 }
 .Imagen:hover {
-    width: 400px;
-    height: 400px;
+    width: 265px;
+    height: 265px;
     border-radius: 25px;
     translate: 0px -50px;
     transition: all 0.5s;
