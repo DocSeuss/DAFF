@@ -238,7 +238,18 @@ h2{
     justify-content: center;
 
 }
+.imgproductos {
+    display: flex;
+    justify-content: center;
 
+}
+.imgproductos:hover {
+    width: 800px;
+    height: 800px;
+    border-radius: 25px;
+    translate: 0px -50px;
+    transition: all 0.5s;
+}
 
 /* Imagenes */
 .Imagen{
@@ -248,10 +259,10 @@ h2{
     transition: all 0.5s;
 }
 .Imagen:hover {
-    width: 265px;
-    height: 265px;
+    width: 350px;
+    height: 325px;
     border-radius: 25px;
-    translate: 0px -50px;
+    translate: 0px -25px;
     transition: all 0.5s;
 
 }
