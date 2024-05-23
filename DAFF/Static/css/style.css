@@ -8,7 +8,7 @@
 /* Estilo Body */
 
 body{    
-    background: lightgrey;
+    background-image: url("../Img/pineapple.jpg");
     margin: 20px;
     
 }
@@ -83,7 +83,6 @@ h1{
     display: flex;
     margin: 10px;
     line-height: 30px;
-    border: 2px solid black;
     background: #ccc;
     padding: 2px;
     width: 230px;
@@ -208,7 +207,6 @@ section{
 h2{
     background: black;
     color: white;
-    border-bottom: 3px solid white;
     text-align: center;
     border-radius: 10px;    
 }
@@ -219,7 +217,19 @@ h2{
     display: flex;
     border: 2px solid black;
     width: 350px;
-    height: 350px;
+    height: 405px;
+    border-radius: 25px;
+    padding: 25px;
+    background: darkgray;
+    justify-content: center;
+
+}
+
+.itemproductos {
+    display: flex;
+    border: 2px solid black;
+    width: 350px;
+    height: 450px;
     border-radius: 25px;
     padding: 25px;
     background: darkgray;
@@ -232,14 +242,14 @@ h2{
 .Imagen{
     border: 2px solid black;
     width: 250px;
-    object-fit: cover;
+    height: 250px;
     transition: all 0.5s;
 }
 .Imagen:hover {
-    width: 265px;
-    height: 265px;
+    width: 350px;
+    height: 325px;
     border-radius: 25px;
-    translate: 0px -50px;
+    translate: 0px -25px;
     transition: all 0.5s;
 
 }
@@ -247,13 +257,19 @@ h2{
 
 .Detail{
     display: flex;
+    flex-direction: column;
     border: 1px solid black;
+    border-radius: 10px;
     justify-content: center;
-    background: black;
-    color: white;
+    background: rgb(133, 133, 133);
+    color: rgb(255, 255, 255);
     margin-top: 20px;
-    font-size: x-large;
-    
+    font-size: x-large; 
+    text-align: center;
+}
+/* letra pequeña */
+.small {
+    font-size: 15px; 
 }
 
 a{

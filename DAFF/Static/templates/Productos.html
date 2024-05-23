@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head> 
@@ -19,7 +20,7 @@
         <!-- logo -->
         <div class="logo">
             
-            <a href="index.html"><img src="../../Static/Img/DAFF Logo.png" alt="" width="50px" height="50px"></a>             
+            <a href="../../index.html"><img src="../../Static/Img/DAFF Logo.png" alt="" width="50px" height="50px"></a>             
                 
         </div>
 
@@ -43,9 +44,9 @@
     
     <nav id="barra-nav">
         
-        <!-- Ir a productos -->
+        <!-- Ir a Index, conservo y reutuilizo el class -->
         <div class="Ir-a-productos">
-            <a href="" class="Ir-a-productos">Ir a Productos</a>
+            <a href="../../index.html" class="Ir-a-productos">Volver a Inicio</a>
         </div>       
 
         <!-- barra de busqueda -->
@@ -67,36 +68,45 @@
 
     
     <main class="grid-layout" id="grid-layout">
-
-         <!-- ofertas -->          
-        
-            
-         <h2 class="titulo-ofertas">Ofertas</h2>
-
+      
         <section class="Secciones" id="ofertas">
-            
 
             <!-- oferta1 -->
 
-            <div class="item" id="oferta1">
+            <div class="itemproductos" id="oferta1">
                 <a href="">
-                    <img src="../../Static/Img/Sueter Blanco.jpg" alt="" class="Imagen">
+                    <div class="imgproductos">
+                        <img src="../../Static/Img/Sueter Blanco.jpg" alt="" class="Imagen">
+                    </div>
                     <div class="Detail">
                         <p class="oferta-1-detail-tittle">
-                            Sueter Blanco
-                        </p>                        
+                            Suéter blanco
+                            <br>
+                            $22.999
+                            <div class="small">
+                                6 cuotas sin interés de $3.833,33
+                            </div>
+                            
+                        </p>
+                        
                     </div>
+                   
                 </a>
             </div>
 
         <!-- oferta 2 -->
 
-            <div class="item" id="oferta2">
+            <div class="itemproductos" id="oferta2">
                 <a href="">
                     <img src="../../Static/Img/Sueter negro.jpg" alt="" class="Imagen">
                     <div class="Detail">
                         <p class="oferta-2-detail-tittle">
-                        Sueter Negro
+                        Suéter negro
+                        <br>
+                        $20.999
+                            <div class="small">
+                            6 cuotas sin interés de $3.500
+                            </div>
                         </p>                        
                     </div>
                 </a>
@@ -104,47 +114,66 @@
 
         <!-- oferta 3 -->
 
-            <div class="item" id="oferta3">
+            <div class="itemproductos" id="oferta3">
                 <a href="">
                     <img src="../../Static/Img/Sueter verde.jpg" alt="" class="Imagen">
                     <div class="Detail">
                         <p class="oferta-3-detail-tittle">
-                        Sueter Verde
-                        </p>                       
+                            Suéter verde
+                            <br>
+                            $20.999
+                                <div class="small">
+                                6 cuotas sin interés de $3.500
+                                </div>
+                        </p>                                               
                     </div>
                 </a>
             </div>
         </section>
 
-        <!-- productos destacados -->
-
-        
-        <h2 class="titulo-destacados">Productos destacados</h2>
+        <!-- productos destacados -->        
 
         <section class="Secciones" id="destacados">
 
 
             <!-- producto destacado 1 -->
 
-            <div class="item" id="destacado1">
+            <div class="itemproductos" id="destacado1">
                 <a href="">
                     <img src="../../Static/Img/Campera negra.jpg" alt="" class="Imagen">
                     <div class="Detail">
                         <p class="destacado1-detail">
-                            Campera Negra
+                            Campera Negra 
+                            <br>
+                            $50.000
+                            <div class="small">
+                                6 cuotas sin interés de $8.333
+                            </div>
                         </p>
+                        
                     </div>
                 </a>
             </div>
 
             <!-- producto destacado 2 -->
 
-            <div class="item" id="destacado2">
+            <div class="itemproductos" id="destacado2">
                 <a href="">
                     <img src="../../Static/Img/Hoodies unisex marron claro.jpg" alt="" class="Imagen">
                     <div class="Detail">
                         <p class="destacado1-detail">
                             Hoodies Unisex
+                            <div class="color-options">
+                                <div class="color-option" style="background-color: red;"></div>
+                                <div class="color-option" style="background-color: blue;"></div>
+                                <div class="color-option" style="background-color: green;"></div>
+                                <div class="color-option" style="background-color: yellow;"></div>
+                            </div>
+                            $28.999
+                            <div class="small">
+                                6 cuotas sin interés de $4.833
+                            </div>
+
                         </p>
                     </div>
                 </a>
@@ -152,12 +181,17 @@
 
             <!-- Producto destacado 3 -->
 
-            <div class="item" id="destacado3">
+            <div class="itemproductos" id="destacado3">
                 <a href="">
-                    <img src="../../Static/Img/Sobretodo hombre polar marron.jpg" alt="" class="Imagen">
+                    <img src="../../Static/Img/Sobretodo mujer beige.jpg" alt="" class="Imagen">
                     <div class="Detail">
                         <p class="destacado1-detail">
-                            Hoodies Unisex
+                            Sobretodo mujer beige
+                            <br>
+                            $74.999
+                                <div class="small">
+                                6 cuotas sin interés de $12.500
+                                </div>
                         </p>
                     </div>
                 </a>
@@ -165,42 +199,56 @@
         </section>
 
         <!-- Catálogo -->
-        
-        
-        <!-- Catalogo -->
-
-        <h2 class="titulo-catalogo">Catálogo</h2>
 
         <section class="Secciones" id="catalogo">        
             
-            <div class="item" id="destacado3">
+            <div class="itemproductos" id="destacado3">
                 <a href="">
-                    <img src="../../Static/Img/Sobretodo hombre polar marron.jpg" alt="" class="Imagen">
+                    <img src="../../Static/Img/sueter naranja.jpg" alt="" class="Imagen">
                     <div class="Detail">
                         <p class="destacado1-detail">
-                            Hoodies Unisex
+                            Suéter naranja
+                            <br>
+                            <del>$25.999</del> 
+                            $20.999 
+                                <div class="small">
+                                6 cuotas sin interés de $3.500
+                                </div>
                         </p>
                     </div>
                 </a>
             </div>
             
-            <div class="item" id="destacado3">
+            <div class="itemproductos" id="destacado3">
                 <a href="">
-                    <img src="../../Static/Img/Sobretodo hombre polar marron.jpg" alt="" class="Imagen">
+                    <img src="../../Static/Img/Sueter celeste.jpg" alt="" class="Imagen">
                     <div class="Detail">
                         <p class="destacado1-detail">
-                            Hoodies Unisex
+                            Suéter celeste
+                            <br>
+                            <del>$25.999</del> 
+                            $20.999 
+                                <div class="small">
+                                6 cuotas sin interés de $3.500
+                                </div>
                         </p>
                     </div>
                 </a>
             </div>
 
-            <div class="item" id="destacado3">
+            <div class="itemproductos" id="destacado3">
                 <a href="">
                     <img src="../../Static/Img/Sobretodo hombre polar marron.jpg" alt="" class="Imagen">
                     <div class="Detail">
                         <p class="destacado1-detail">
-                            Hoodies Unisex
+                            Sobretodo hombre
+                            <br>
+                            <del>$49.999</del> 
+                            $44.999 
+                                <div class="small">
+                                6 cuotas sin interés de $7.333
+                                </div>
+                             
                         </p>
                     </div>
                 </a>
