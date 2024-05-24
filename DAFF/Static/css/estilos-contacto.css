@@ -6,9 +6,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Imagen de fondo */
 :root{
-    background-color: rgb(233, 235, 235);
-    
+    background-image: url("../Img/pineapple.jpg");
+      
 }
 
 a{
@@ -73,6 +74,15 @@ h1{
 .dropdown-menu li ul li ul {
     right:-140px;
     top:0px;
+}
+
+/* Fondo semitransparente y sombra para resaltar el formulario */
+.info-form{
+   font-weight: 500;
+   background: rgba(255, 255, 255, 0.8);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   height: 300px;
+   padding: 5px;
 }
 
 .container-form{
